@@ -33,3 +33,5 @@ $(function () {
 		startVisible: true,
 	});
 });
+
+document.getElementById('fluid').play();

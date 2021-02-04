@@ -1,0 +1,36 @@
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Light.ttf);
+  font-family: circular;
+  font-weight: 200;
+}
+
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Book.ttf);
+  font-family: circular;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Medium.ttf);
+  font-family: circular;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Bold.ttf);
+  font-family: circular;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url(/resources/fonts/Freight-Pro/FreightTextProBook-Regular.otf);
+  font-family: freight;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(/resources/fonts/Freight-Pro/FreightTextProBold-Regular.otf);
+  font-family: freight;
+  font-weight: 800;
+}
+/*# sourceMappingURL=theme.css.map */

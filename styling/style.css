@@ -1,0 +1,170 @@
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Light.ttf);
+  font-family: circular;
+  font-weight: 200;
+}
+
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Book.ttf);
+  font-family: circular;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Medium.ttf);
+  font-family: circular;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(/resources/fonts/Circular/CircularStd-Bold.ttf);
+  font-family: circular;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url(/resources/fonts/Freight-Pro/FreightTextProBook-Regular.otf);
+  font-family: freight;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(/resources/fonts/Freight-Pro/FreightTextProBold-Regular.otf);
+  font-family: freight;
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.header {
+  height: auto;
+  margin-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .left .banner {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #1e1e1e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  position: relative;
+}
+
+.header .left .banner .foreground {
+  color: black;
+  font-family: circular;
+  background-color: white;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 10px;
+  margin: 8px;
+}
+
+.header .left .banner .background {
+  color: #9b9b9b;
+  font-family: circular;
+  font-weight: 200;
+  width: 260px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header .left .banner .background .fader {
+  height: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1e1e1e), to(rgba(30, 30, 30, 0)));
+  background-image: linear-gradient(to right, #1e1e1e, rgba(30, 30, 30, 0));
+  position: absolute;
+  z-index: 99;
+  width: 8px;
+}
+
+.header .left .banner .background .marquee {
+  margin-left: 8px;
+}
+
+.header .left img {
+  width: 0px;
+  opacity: 0.7;
+  margin-top: 2vh;
+}
+
+.header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .right ul {
+  color: #7c8698;
+  font-family: circular;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  cursor: pointer;
+}
+
+.header .right ul:hover {
+  color: #1a202c;
+}
+
+.body {
+  text-align: center;
+  margin-top: 12vh;
+}
+
+.body img {
+  width: 600px;
+}
+
+.body .hero {
+  font-family: circular;
+  font-size: 32px;
+  letter-spacing: -1.6px;
+  font-weight: 600;
+  color: #141414;
+  margin: 0 auto;
+  width: 32vw;
+}
+
+.body button {
+  margin-top: 2vh;
+  background-color: #e95454;
+  border: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-family: circular;
+  padding: 16px 28px;
+  border-radius: 200px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.body button:hover {
+  background-color: #d84c4c;
+}
+/*# sourceMappingURL=style.css.map */

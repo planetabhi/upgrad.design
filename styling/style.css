@@ -34,6 +34,68 @@
   font-weight: 800;
 }
 
+@-webkit-keyframes push-up {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes push-up {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes push-down {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes push-down {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
 }
@@ -57,16 +119,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation: fade-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+          animation: fade-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  opacity: 0;
 }
 
 .header .left .banner {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-color: #1e1e1e;
+  background-color: #f4f5f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-color: #d84c4c;
+  border: 1px solid #f0f1f4;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,18 +142,18 @@ body {
 }
 
 .header .left .banner .foreground {
-  color: black;
+  color: white;
   font-family: circular;
-  background-color: white;
+  background-color: #1a202c;
   border-radius: 100px;
   font-weight: 800;
   font-size: 12px;
-  padding: 10px;
+  padding: 16px 20px;
   margin: 8px;
 }
 
 .header .left .banner .background {
-  color: #9b9b9b;
+  color: #4a5568;
   font-family: circular;
   font-weight: 200;
   width: 260px;
@@ -96,8 +163,8 @@ body {
 
 .header .left .banner .background .fader {
   height: 20px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1e1e1e), to(rgba(30, 30, 30, 0)));
-  background-image: linear-gradient(to right, #1e1e1e, rgba(30, 30, 30, 0));
+  background-image: -webkit-gradient(linear, left top, right top, from(#f4f5f7), to(rgba(244, 245, 247, 0)));
+  background-image: linear-gradient(to right, #f4f5f7, rgba(244, 245, 247, 0));
   position: absolute;
   z-index: 99;
   width: 8px;
@@ -125,6 +192,10 @@ body {
   font-size: 16px;
   letter-spacing: -0.6px;
   cursor: pointer;
+  padding-left: 0;
+  margin-left: 2vw;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .header .right ul:hover {
@@ -140,18 +211,47 @@ body {
   width: 600px;
 }
 
-.body .hero {
+.body .hero-container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.body .hero-container .hero-content {
   font-family: circular;
   font-size: 32px;
   letter-spacing: -1.6px;
+  line-height: 50px;
   font-weight: 600;
-  color: #141414;
+  color: #1a202c;
   margin: 0 auto;
   width: 32vw;
+  -webkit-animation: push-up 0.6s cubic-bezier(0.65, 0, 0.35, 1) 1s forwards;
+          animation: push-up 0.6s cubic-bezier(0.65, 0, 0.35, 1) 1s forwards;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
-.body button {
-  margin-top: 2vh;
+.body .join-us {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3vh;
+}
+
+.body .join-us button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   background-color: #e95454;
   border: none;
   color: white;
@@ -159,12 +259,88 @@ body {
   letter-spacing: -1px;
   font-family: circular;
   padding: 16px 28px;
+  padding-bottom: 18px;
   border-radius: 200px;
   font-weight: 600;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.body button:hover {
+.body .join-us button:hover {
   background-color: #d84c4c;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 12px 32px rgba(216, 76, 76, 0.3);
+          box-shadow: 0px 12px 32px rgba(216, 76, 76, 0.3);
+}
+
+.body .join-us button:hover + .response {
+  opacity: 0.6;
+}
+
+.body .join-us button .container {
+  width: 100%;
+}
+
+.body .join-us button .eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.body .join-us button .eye:after {
+  position: absolute;
+  bottom: 8px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  background: #fdecec;
+  border-radius: 50%;
+  content: ' ';
+}
+
+.body .join-us .response {
+  font-size: 12px;
+  font-family: circular;
+  margin-top: 16px;
+  color: #7c8698;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer {
+  position: fixed;
+  bottom: 3vh;
+  right: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-animation: fade-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+          animation: fade-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  opacity: 0;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+.footer ul li img {
+  margin-left: 1vw;
+  opacity: 0.4;
+  padding: 16px;
+  padding-right: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer ul li img:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

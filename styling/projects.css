@@ -123,9 +123,10 @@ body a:hover {
 
 .header {
   top: 0;
+  z-index: 999;
   background-color: #ffffff;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   height: auto;
   height: 6vh;
   display: -webkit-box;

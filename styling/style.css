@@ -208,7 +208,7 @@ body a:hover {
   color: #7c8698;
   font-family: circular;
   font-size: 16px;
-  /*letter-spacing: -0.6px;*/
+  letter-spacing: -0.6px;
   cursor: pointer;
   padding-left: 0;
   margin-left: 2vw;
@@ -216,7 +216,7 @@ body a:hover {
 
 .body {
   text-align: center;
-  /* margin-top: 12vh; */
+  margin-top: 12vh;
 }
 
 .body img {
@@ -234,7 +234,7 @@ body a:hover {
 .body .hero-container .hero-content {
   font-family: circular;
   font-size: 32px;
-  letter-spacing: -1.2px;
+  letter-spacing: -1.6px;
   line-height: 50px;
   font-weight: 600;
   color: #1a202c;
@@ -268,7 +268,7 @@ body a:hover {
   border: none;
   color: white;
   font-size: 18px;
-  /*letter-spacing: -1px;*/
+  letter-spacing: -1px;
   font-family: circular;
   padding: 16px 28px;
   padding-bottom: 18px;

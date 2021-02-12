@@ -8,9 +8,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	margin-left: 8vw;
 	margin-right: 8vw;
+	overflow-x: hidden !important;
 
 	a {
 		text-decoration: none;
+		color: $g-600;
 		transition: all 0.2s ease-in-out;
 		&:visited {
 			color: $g-600;
@@ -24,7 +26,6 @@ body {
 .header {
 	top: 0;
 	z-index: 999;
-	background-color: $g-100;
 	padding-top: 24px;
 	padding-bottom: 24px;
 	height: auto;
@@ -51,6 +52,7 @@ body {
 			padding-left: 0;
 			margin-left: 2vw;
 			transition: all 0.2s ease-in-out;
+
 			&:hover {
 				color: $g-900;
 			}
@@ -59,65 +61,148 @@ body {
 }
 
 .body {
-	margin-top: 10vh;
-	margin-bottom: 10vh;
-	.project-listings {
-		display: flex;
-		gap: 2vw;
-		flex-wrap: wrap;
-		a {
-			flex: 1 0 0;
-			min-width: 25%;
-			max-width: 32%;
-		}
-		.card {
-			transition: all 0.1s ease-in-out;
-			cursor: pointer;
-			.thumbnail {
-				height: 280px;
-				border-radius: 8px;
-				background-color: $g-300;
-				overflow: hidden;
-				background-repeat: no-repeat;
-				background-size: contain;
-				transition: all 0.3s ease-in-out;
-				img {
-					height: 100%;
-					width: 100%;
-					object-fit: cover;
-					transform: scale(1.1);
-				}
-			}
+	margin-top: 16vh;
+	z-index: 99999;
+	.hero {
+		font-family: circular;
+		width: 30vw;
+		.heading-container {
+			font-size: 60px;
+			letter-spacing: -2.4px;
+			font-weight: 600;
+			line-height: 72px;
+			color: $g-900;
+			overflow: hidden;
 			.heading {
-				font-family: circular;
-				font-weight: 200;
-				font-size: 24px;
-				letter-spacing: -0.8px;
-				color: $g-600;
-				margin-top: 2vh;
-				line-height: 36px;
+				animation: push-up 0.6s cubic-bezier(0.65, 0, 0.35, 1) 1s forwards;
+				transform: translateY(100%);
 			}
+		}
+		.subheading-container {
+			margin-top: 2vh;
+			font-size: 20px;
+			letter-spacing: -0.6px;
+			font-weight: 200;
+			line-height: 34px;
+			color: $g-700;
+			overflow: hidden;
+			.subheading {
+				animation: push-up 0.6s cubic-bezier(0.65, 0, 0.35, 1) 1.2s forwards;
+				transform: translateY(100%);
+			}
+		}
+	}
+	.project-cards {
+		margin-top: 8vh;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2vw;
 
-			&:hover {
-				transform: scale(1.01);
+		.card-1 {
+			@include project-card-big;
+
+			.img {
+				// margin-top: 12vh;
+				// flex-basis: 70%;
+				// background-image: url(/resources/images/macbook-search.png);
+				// background-size: contain;
+				// background-repeat: no-repeat;
+				// background-position-x: right;
+				// background-position-x: bottom;
 			}
-			&:hover > #SGC {
-				box-shadow: 0px 24px 40px 0px rgba(15, 30, 86, 0.4);
+		}
+		.card-2 {
+			@include project-card-small;
+			background-color: #f3b119;
+		}
+		.card-3 {
+			@include project-card-small;
+			background-color: #c676ae;
+		}
+		.card-4 {
+			@include project-card-big;
+			background-color: #02a971;
+		}
+		.card-5 {
+			@include project-card-big;
+			background-color: #7c8698;
+		}
+		.card-6 {
+			@include project-card-small;
+			background-color: #2badf8;
+		}
+	}
+}
+
+.gradients {
+	position: relative;
+	z-index: -1;
+	.circle-1 {
+		position: absolute;
+		z-index: 999;
+		width: 1000px;
+		height: 1000px;
+		border-radius: 50%;
+		background-color: #f3a0a0;
+		filter: blur(500px);
+		transform: translate(48vw, -30vh);
+		animation: mover-1 10s ease infinite forwards;
+
+		@keyframes mover-1 {
+			0% {
+				transform: translate(48vw, -30vh);
 			}
-			&:hover > #AES {
-				box-shadow: 0px 24px 40px 0px rgba(129, 218, 182, 0.4);
+			33% {
+				transform: translate(56vw, -22vh);
 			}
-			&:hover > #community {
-				box-shadow: 0px 24px 40px 0px rgba(252, 216, 11, 0.4);
+			100% {
+				transform: translate(48vw, -30vh);
 			}
-			&:hover > #search {
-				box-shadow: 0px 24px 40px 0px rgba(233, 84, 84, 0.4);
+		}
+	}
+	.circle-2 {
+		position: absolute;
+		z-index: 9999;
+		width: 500px;
+		height: 500px;
+		border-radius: 50%;
+		background-color: #63c3fa;
+		filter: blur(500px);
+		transform: translate(10vw, -8vh);
+		animation: mover-2 8s ease 2s infinite forwards;
+
+		@keyframes mover-2 {
+			0% {
+				transform: translate(10vw, -8vh);
 			}
-			&:hover > #jobs {
-				box-shadow: 0px 24px 40px 0px rgba(239, 226, 253, 0.8);
+			33% {
+				transform: translate(16vw, 0vh);
 			}
-			&:hover > #checkout-process-revamp {
-				box-shadow: 0px 24px 40px 0px rgba(231, 112, 89, 0.4);
+			100% {
+				transform: translate(10vw, -8vh);
+			}
+		}
+	}
+	.circle-3 {
+		position: absolute;
+		z-index: 9999;
+		width: 500px;
+		height: 500px;
+		border-radius: 50%;
+		background-color: #f6c24c;
+		filter: blur(500px);
+		transform: translate(20vw, 32vh);
+		animation: mover-3 6s ease 4s infinite forwards;
+
+		@keyframes mover-3 {
+			0% {
+				transform: translate(20vw, 32vh);
+			}
+			33% {
+				transform: translate(10vw, 24vh);
+			}
+			100% {
+				transform: translate(20vw, 32vh);
 			}
 		}
 	}

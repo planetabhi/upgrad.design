@@ -67,3 +67,64 @@ $g-900: #1a202c;
 		opacity: 1;
 	}
 }
+
+@mixin project-card-big {
+	width: 58%;
+	height: 720px;
+	background-color: #06132a;
+	border-radius: 16px;
+	overflow: hidden;
+	cursor: pointer;
+
+	.body {
+		color: $g-100;
+		font-family: circular;
+		width: 400px;
+		margin-left: 4vw;
+		margin-top: 10vh;
+
+		.heading {
+			font-size: 40px;
+			font-weight: 400;
+			letter-spacing: -1.2px;
+		}
+		.subheading {
+			font-size: 22px;
+			font-weight: 200;
+			margin-top: 1vh;
+			line-height: 36px;
+			letter-spacing: -0.4px;
+			opacity: 0.8;
+		}
+	}
+}
+@mixin project-card-small {
+	width: 39%;
+	height: 720px;
+	background-color: #06132a;
+	border-radius: 16px;
+	overflow: hidden;
+	cursor: pointer;
+
+	.body {
+		color: $g-100;
+		font-family: circular;
+		width: 400px;
+		margin-left: 4vw;
+		margin-top: 10vh;
+
+		.heading {
+			font-size: 40px;
+			font-weight: 400;
+			letter-spacing: -1.2px;
+		}
+		.subheading {
+			font-size: 22px;
+			font-weight: 200;
+			margin-top: 1vh;
+			line-height: 36px;
+			letter-spacing: -0.4px;
+			opacity: 0.8;
+		}
+	}
+}

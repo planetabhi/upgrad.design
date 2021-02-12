@@ -69,6 +69,8 @@ body {
 
 .body {
 	margin-top: 16vh;
+	margin-bottom: 16vh;
+
 	z-index: 99999;
 	.hero {
 		font-family: circular;
@@ -107,7 +109,7 @@ body {
 
 		.card-1 {
 			@include project-card-big;
-
+			height: 60vh;
 			.img {
 				// margin-top: 12vh;
 				// flex-basis: 70%;
@@ -121,28 +123,34 @@ body {
 		.card-2 {
 			@include project-card-small;
 			background-color: #f3b119;
+			height: 60vh;
 		}
 		.card-3 {
 			@include project-card-small;
 			background-color: #c676ae;
+			height: 60vh;
 		}
 		.card-4 {
 			@include project-card-big;
 			background-color: #02a971;
+			height: 60vh;
 		}
 		.card-5 {
 			@include project-card-big;
 			background-color: #7c8698;
+			height: 60vh;
 		}
+
 		.card-6 {
 			@include project-card-small;
 			background-color: #2badf8;
+			height: 60vh;
 		}
 	}
 }
 
 .gradients {
-	position: relative;
+	position: fixed;
 	z-index: -1;
 	.circle-1 {
 		position: absolute;
@@ -210,6 +218,227 @@ body {
 			}
 			100% {
 				transform: translate(20vw, 32vh);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.body {
+		.hero {
+			width: 40vw;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.body {
+		.hero {
+			width: 50vw;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.body {
+		.hero {
+			.heading-container {
+				font-size: 52px;
+				line-height: 64px;
+			}
+			.subheading-container {
+				font-size: 18px;
+			}
+		}
+		.project-cards {
+			.card-1 {
+				.body {
+					margin-left: 8vw;
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-2 {
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-3 {
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-4 {
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-5 {
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-6 {
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.body {
+		.hero {
+			width: 72vw;
+			.heading-container {
+				font-size: 52px;
+				line-height: 64px;
+			}
+			.subheading-container {
+				font-size: 18px;
+			}
+		}
+		.project-cards {
+			.card-1 {
+				width: 100%;
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-2 {
+				width: 100%;
+
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-3 {
+				width: 100%;
+
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-4 {
+				width: 100%;
+
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-5 {
+				width: 100%;
+
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+			.card-6 {
+				width: 100%;
+
+				.body {
+					width: 80%;
+					.heading {
+						font-size: 32px;
+					}
+					.subheading {
+						font-size: 18px;
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.body {
+		.hero {
+			width: 80vw;
+			.heading-container {
+				font-size: 48px;
+				line-height: 58px;
+			}
+			.subheading-container {
+				font-size: 18px;
+				line-height: 30px;
 			}
 		}
 	}

@@ -183,6 +183,7 @@ body a:hover {
 
 .body {
   margin-top: 16vh;
+  margin-bottom: 16vh;
   z-index: 99999;
 }
 
@@ -236,11 +237,12 @@ body a:hover {
 
 .body .project-cards .card-1 {
   width: 58%;
-  height: 720px;
+  height: 60vh;
   background-color: #06132a;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
+  height: 60vh;
 }
 
 .body .project-cards .card-1 .body {
@@ -268,12 +270,13 @@ body a:hover {
 
 .body .project-cards .card-2 {
   width: 39%;
-  height: 720px;
+  height: 60vh;
   background-color: #06132a;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   background-color: #f3b119;
+  height: 60vh;
 }
 
 .body .project-cards .card-2 .body {
@@ -301,12 +304,13 @@ body a:hover {
 
 .body .project-cards .card-3 {
   width: 39%;
-  height: 720px;
+  height: 60vh;
   background-color: #06132a;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   background-color: #c676ae;
+  height: 60vh;
 }
 
 .body .project-cards .card-3 .body {
@@ -334,12 +338,13 @@ body a:hover {
 
 .body .project-cards .card-4 {
   width: 58%;
-  height: 720px;
+  height: 60vh;
   background-color: #06132a;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   background-color: #02a971;
+  height: 60vh;
 }
 
 .body .project-cards .card-4 .body {
@@ -367,12 +372,13 @@ body a:hover {
 
 .body .project-cards .card-5 {
   width: 58%;
-  height: 720px;
+  height: 60vh;
   background-color: #06132a;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   background-color: #7c8698;
+  height: 60vh;
 }
 
 .body .project-cards .card-5 .body {
@@ -400,12 +406,13 @@ body a:hover {
 
 .body .project-cards .card-6 {
   width: 39%;
-  height: 720px;
+  height: 60vh;
   background-color: #06132a;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
   background-color: #2badf8;
+  height: 60vh;
 }
 
 .body .project-cards .card-6 .body {
@@ -432,7 +439,7 @@ body a:hover {
 }
 
 .gradients {
-  position: relative;
+  position: fixed;
   z-index: -1;
 }
 
@@ -568,6 +575,194 @@ body a:hover {
   100% {
     -webkit-transform: translate(20vw, 32vh);
             transform: translate(20vw, 32vh);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .body .hero {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .body .hero {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .body .hero .heading-container {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  .body .hero .subheading-container {
+    font-size: 18px;
+  }
+  .body .project-cards .card-1 .body {
+    margin-left: 8vw;
+    width: 80%;
+  }
+  .body .project-cards .card-1 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-1 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-2 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-2 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-2 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-3 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-3 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-3 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-4 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-4 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-4 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-5 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-5 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-5 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-6 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-6 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-6 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .body .hero {
+    width: 72vw;
+  }
+  .body .hero .heading-container {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  .body .hero .subheading-container {
+    font-size: 18px;
+  }
+  .body .project-cards .card-1 {
+    width: 100%;
+  }
+  .body .project-cards .card-1 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-1 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-1 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-2 {
+    width: 100%;
+  }
+  .body .project-cards .card-2 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-2 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-2 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-3 {
+    width: 100%;
+  }
+  .body .project-cards .card-3 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-3 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-3 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-4 {
+    width: 100%;
+  }
+  .body .project-cards .card-4 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-4 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-4 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-5 {
+    width: 100%;
+  }
+  .body .project-cards .card-5 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-5 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-5 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .body .project-cards .card-6 {
+    width: 100%;
+  }
+  .body .project-cards .card-6 .body {
+    width: 80%;
+  }
+  .body .project-cards .card-6 .body .heading {
+    font-size: 32px;
+  }
+  .body .project-cards .card-6 .body .subheading {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .body .hero {
+    width: 80vw;
+  }
+  .body .hero .heading-container {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .body .hero .subheading-container {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=projects.css.map */

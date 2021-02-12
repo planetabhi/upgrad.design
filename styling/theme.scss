@@ -70,12 +70,11 @@ $g-900: #1a202c;
 
 @mixin project-card-big {
 	width: 58%;
-	height: 720px;
+	height: 60vh;
 	background-color: #06132a;
 	border-radius: 16px;
 	overflow: hidden;
 	cursor: pointer;
-
 	.body {
 		color: $g-100;
 		font-family: circular;
@@ -100,7 +99,7 @@ $g-900: #1a202c;
 }
 @mixin project-card-small {
 	width: 39%;
-	height: 720px;
+	height: 60vh;
 	background-color: #06132a;
 	border-radius: 16px;
 	overflow: hidden;

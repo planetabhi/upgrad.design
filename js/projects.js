@@ -61,3 +61,15 @@ ScrollReveal().reveal('.card-6', {
 	distance: '40px',
 	viewFactor: 0.3,
 });
+
+$(document).on('scroll', function () {
+	if ($(this).scrollTop() >= $('#project-cards').position().top) {
+		document.getElementById('header').style.background = '#fff';
+	}
+});
+
+$(document).on('scroll', function () {
+	if ($(this).scrollTop() < $('#project-cards').position().top) {
+		document.getElementById('header').style.background = 'none';
+	}
+});

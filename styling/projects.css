@@ -144,6 +144,14 @@ body a:hover {
   -webkit-animation: fade-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
           animation: fade-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
   opacity: 0;
+  width: 100vw;
+  margin-left: -8vw;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header .left {
+  margin-left: 8vw;
 }
 
 .header .left img {
@@ -154,6 +162,7 @@ body a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 8vw;
 }
 
 .header .right ul {
@@ -216,7 +225,7 @@ body a:hover {
 }
 
 .body .project-cards {
-  margin-top: 8vh;
+  margin-top: 16vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

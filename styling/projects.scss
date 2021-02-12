@@ -36,13 +36,20 @@ body {
 	justify-content: space-between;
 	animation: fade-in 0.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 	opacity: 0;
+	width: 100vw;
+	margin-left: -8vw;
+	transition: all 0.2s ease-in-out;
+
 	.left {
+		margin-left: 8vw;
 		img {
 			width: 32px;
 		}
 	}
 	.right {
 		display: flex;
+		margin-right: 8vw;
+
 		ul {
 			color: $g-600;
 			font-family: circular;
@@ -93,7 +100,7 @@ body {
 		}
 	}
 	.project-cards {
-		margin-top: 8vh;
+		margin-top: 16vh;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 2vw;

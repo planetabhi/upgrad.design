@@ -609,6 +609,9 @@ body a:hover {
     font-size: 18px;
     margin-top: 0;
   }
+  .body .project-cards .card-2 {
+    margin-top: 24px;
+  }
   .body .project-cards .card-2 .body {
     width: 80%;
   }
@@ -618,6 +621,9 @@ body a:hover {
   .body .project-cards .card-2 .body .subheading {
     font-size: 18px;
     margin-top: 0;
+  }
+  .body .project-cards .card-3 {
+    margin-top: 24px;
   }
   .body .project-cards .card-3 .body {
     width: 80%;
@@ -639,6 +645,9 @@ body a:hover {
     font-size: 18px;
     margin-top: 0;
   }
+  .body .project-cards .card-5 {
+    margin-top: 24px;
+  }
   .body .project-cards .card-5 .body {
     width: 80%;
   }
@@ -648,6 +657,9 @@ body a:hover {
   .body .project-cards .card-5 .body .subheading {
     font-size: 18px;
     margin-top: 0;
+  }
+  .body .project-cards .card-6 {
+    margin-top: 24px;
   }
   .body .project-cards .card-6 .body {
     width: 80%;
@@ -673,6 +685,7 @@ body a:hover {
     font-size: 18px;
   }
   .body .project-cards .card-1 {
+    margin-top: 24px;
     width: 100%;
   }
   .body .project-cards .card-1 .body {
@@ -687,6 +700,7 @@ body a:hover {
   }
   .body .project-cards .card-2 {
     width: 100%;
+    margin-top: 24px;
   }
   .body .project-cards .card-2 .body {
     width: 80%;
@@ -700,6 +714,7 @@ body a:hover {
   }
   .body .project-cards .card-3 {
     width: 100%;
+    margin-top: 24px;
   }
   .body .project-cards .card-3 .body {
     width: 80%;
@@ -713,6 +728,7 @@ body a:hover {
   }
   .body .project-cards .card-4 {
     width: 100%;
+    margin-top: 24px;
   }
   .body .project-cards .card-4 .body {
     width: 80%;
@@ -726,6 +742,7 @@ body a:hover {
   }
   .body .project-cards .card-5 {
     width: 100%;
+    margin-top: 24px;
   }
   .body .project-cards .card-5 .body {
     width: 80%;
@@ -739,6 +756,7 @@ body a:hover {
   }
   .body .project-cards .card-6 {
     width: 100%;
+    margin-top: 24px;
   }
   .body .project-cards .card-6 .body {
     width: 80%;

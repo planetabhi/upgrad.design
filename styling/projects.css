@@ -126,7 +126,7 @@ body a:hover {
 .header {
   top: 0;
   z-index: 999;
-  padding-top: 24px;
+  padding-top: 48px;
   padding-bottom: 24px;
   height: auto;
   height: 6vh;
@@ -165,20 +165,14 @@ body a:hover {
   margin-right: 8vw;
 }
 
-.header .right ul {
-  color: #7c8698;
-  font-family: circular;
-  font-size: 16px;
-  letter-spacing: -0.6px;
-  cursor: pointer;
-  padding-left: 0;
-  margin-left: 2vw;
+.header .overlay {
+  width: 100vw;
+  height: 200vh;
+  background-color: black;
+  position: fixed;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-.header .right ul:hover {
-  color: #1a202c;
+  opacity: 0;
 }
 
 .body {
@@ -254,7 +248,7 @@ body a:hover {
 }
 
 .body .project-cards .card-1 .body .heading {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   letter-spacing: -1.2px;
 }
@@ -356,7 +350,7 @@ body a:hover {
 }
 
 .body .project-cards .card-4 .body .heading {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   letter-spacing: -1.2px;
 }
@@ -390,7 +384,7 @@ body a:hover {
 }
 
 .body .project-cards .card-5 .body .heading {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   letter-spacing: -1.2px;
 }
@@ -438,9 +432,137 @@ body a:hover {
   opacity: 0.8;
 }
 
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#menuToggle li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 4vh;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #7c8698;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  cursor: pointer;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #1a202c;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 800px;
+  margin: -100px 0 0 -50px;
+  margin-top: -110px;
+  margin-left: -720px;
+  padding: 50px;
+  padding-top: 200px;
+  padding-left: 100px;
+  height: 100vh;
+  background: #0d0d0d;
+  list-style-type: none;
+  float: right;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(300%, 0);
+          transform: translate(300%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: circular;
+  cursor: pointer;
+}
+
+#menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
 .gradients {
   position: fixed;
   z-index: -1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .gradients .circle-1 {

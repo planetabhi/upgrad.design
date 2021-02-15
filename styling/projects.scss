@@ -26,7 +26,7 @@ body {
 .header {
 	top: 0;
 	z-index: 999;
-	padding-top: 24px;
+	padding-top: 48px;
 	padding-bottom: 24px;
 	height: auto;
 	height: 6vh;
@@ -49,21 +49,14 @@ body {
 	.right {
 		display: flex;
 		margin-right: 8vw;
-
-		ul {
-			color: $g-600;
-			font-family: circular;
-			font-size: 16px;
-			letter-spacing: -0.6px;
-			cursor: pointer;
-			padding-left: 0;
-			margin-left: 2vw;
-			transition: all 0.2s ease-in-out;
-
-			&:hover {
-				color: $g-900;
-			}
-		}
+	}
+	.overlay {
+		width: 100vw;
+		height: 200vh;
+		background-color: black;
+		position: fixed;
+		transition: all 0.2s ease-in-out;
+		opacity: 0;
 	}
 }
 
@@ -149,9 +142,119 @@ body {
 	}
 }
 
+#menuToggle {
+	display: block;
+	position: relative;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+
+	li {
+		width: max-content;
+		margin-bottom: 4vh;
+	}
+
+	a {
+		text-decoration: none;
+		color: $g-100;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $g-600;
+		}
+	}
+
+	input {
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: -7px;
+		left: -5px;
+
+		cursor: pointer;
+
+		opacity: 0; /* hide this */
+		z-index: 2; /* and place it over the hamburger */
+
+		-webkit-touch-callout: none;
+	}
+
+	span {
+		display: block;
+		cursor: pointer;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+		background: $g-900;
+		border-radius: 3px;
+		z-index: 1;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+	}
+}
+
+#menuToggle span:first-child {
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: $g-100;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+	position: absolute;
+	width: 800px;
+	margin: -100px 0 0 -50px;
+	margin-top: -110px;
+	margin-left: -720px;
+	padding: 50px;
+	padding-top: 200px;
+	padding-left: 100px;
+	height: 100vh;
+	background: #0d0d0d;
+	list-style-type: none;
+	float: right;
+	-webkit-font-smoothing: antialiased;
+
+	transform-origin: 0% 0%;
+	transform: translate(300%, 0);
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+	li {
+		padding: 10px 0;
+		font-size: 32px;
+		font-weight: 400;
+		font-family: circular;
+		cursor: pointer;
+	}
+}
+
+#menuToggle input:checked ~ ul {
+	transform: none;
+}
+
 .gradients {
 	position: fixed;
 	z-index: -1;
+	transition: all 0.2s ease-in-out;
+
 	.circle-1 {
 		position: absolute;
 		z-index: 999;

@@ -65,11 +65,19 @@ ScrollReveal().reveal('.card-6', {
 $(document).on('scroll', function () {
 	if ($(this).scrollTop() >= $('#project-cards').position().top) {
 		document.getElementById('header').style.background = '#fff';
+		document.getElementById('gradients').style.opacity = 0;
 	}
 });
 
 $(document).on('scroll', function () {
 	if ($(this).scrollTop() < $('#project-cards').position().top) {
 		document.getElementById('header').style.background = 'none';
+		document.getElementById('gradients').style.opacity = 1;
 	}
 });
+
+function overlayInit() {
+	var e = document.getElementById('overlay');
+	if (e.style.opacity == '0.8') e.style.opacity = '0';
+	else e.style.opacity = '0.8';
+}

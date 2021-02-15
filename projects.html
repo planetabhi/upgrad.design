@@ -9,7 +9,7 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	</head>
 	<body style="overflow-x: hidden">
-		<div class="gradients">
+		<div class="gradients" id="gradients">
 			<div class="circle-1"></div>
 			<div class="circle-2"></div>
 			<div class="circle-3"></div>
@@ -19,13 +19,27 @@
 				<a href="/index.html"> <img src="/resources/images/monogram-dark.svg" alt="" /></a>
 			</div>
 			<div class="right" id="rightNav">
-				<ul>
-					<a style="color: #1a202c">Projects</a>
-				</ul>
-				<ul>
-					<a href="hygge.html">Design System</a>
-				</ul>
+				<nav role="navigation">
+
+					<div id="menuToggle">
+
+					  <input type="checkbox" / id="overlayCheck" onclick="overlayInit()">
+					  
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  
+					  <ul id="menu">
+						<a href="#"><li>Home</li></a>
+						<a href="#"><li>Projects</li></a>
+						<a href="#"><li>Design System</li></a>
+						<a href="#"><li>Contact us</li></a>
+					  </ul>
+					</div>
+				  </nav>
 			</div>
+			<div class="overlay" id="overlay"></div>
+
 		</div>
 		<div class="body">
 			<div class="hero">
@@ -42,8 +56,8 @@
 			<div class="project-cards" id="project-cards">
 				<div class="card-1">
 					<div class="body">
-						<div class="heading">Heading</div>
-						<div class="subheading">Body</div>
+						<div class="heading">This will probably change how people use India's biggest edTech solution</div>
+						<div class="subheading">Crafting search for faster discovery of upGrad's offerings</div>
 					</div>
 					<div class="img">
 					</div>

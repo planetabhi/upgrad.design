@@ -522,7 +522,7 @@ body a:hover {
 }
 
 #menu {
-  position: absolute;
+  position: fixed;
   width: 800px;
   margin: -100px 0 0 -50px;
   margin-top: -110px;
@@ -710,6 +710,9 @@ body a:hover {
   .body .hero {
     width: 50vw;
   }
+  #menu {
+    margin-left: -560px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -800,6 +803,9 @@ body a:hover {
   .body .project-cards .card-6 .body .subheading {
     font-size: 18px;
     margin-top: 0;
+  }
+  #menu {
+    margin-left: -460px;
   }
 }
 
@@ -898,6 +904,10 @@ body a:hover {
     font-size: 18px;
     margin-top: 0;
   }
+  #menu {
+    margin-left: -532px;
+    padding-left: 80px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -911,6 +921,10 @@ body a:hover {
   .body .hero .subheading-container {
     font-size: 18px;
     line-height: 30px;
+  }
+  #menu {
+    margin-left: -420px;
+    padding-left: 80px;
   }
 }
 /*# sourceMappingURL=projects.css.map */

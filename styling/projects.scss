@@ -219,7 +219,7 @@ body {
 }
 
 #menu {
-	position: absolute;
+	position: fixed;
 	width: 800px;
 	margin: -100px 0 0 -50px;
 	margin-top: -110px;
@@ -340,6 +340,9 @@ body {
 			width: 50vw;
 		}
 	}
+	#menu {
+		margin-left: -560px;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -449,6 +452,9 @@ body {
 			}
 		}
 	}
+	#menu {
+		margin-left: -460px;
+	}
 }
 
 @media screen and (max-width: 620px) {
@@ -556,6 +562,10 @@ body {
 			}
 		}
 	}
+	#menu {
+		margin-left: -532px;
+		padding-left: 80px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -571,5 +581,9 @@ body {
 				line-height: 30px;
 			}
 		}
+	}
+	#menu {
+		margin-left: -420px;
+		padding-left: 80px;
 	}
 }

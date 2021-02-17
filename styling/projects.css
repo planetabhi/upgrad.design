@@ -232,7 +232,6 @@ body a:hover {
 
 .body .project-cards .card-1 {
   width: 58%;
-  background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
@@ -277,11 +276,10 @@ body a:hover {
 
 .body .project-cards .card-2 {
   width: 39%;
-  background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #e77059;
+  background-color: #C676AE;
   height: 540px;
 }
 
@@ -330,11 +328,10 @@ body a:hover {
 
 .body .project-cards .card-3 {
   width: 39%;
-  background-color: #06132a;
+  background-color: #FADD9C;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #c676ae;
 }
 
 .body .project-cards .card-3 .body {
@@ -382,11 +379,10 @@ body a:hover {
 
 .body .project-cards .card-4 {
   width: 58%;
-  background-color: #06132a;
+  background-color: #67CBAA;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #02a971;
 }
 
 .body .project-cards .card-4 .body {
@@ -472,11 +468,10 @@ body a:hover {
 
 .body .project-cards .card-6 {
   width: 39%;
-  background-color: #06132a;
+  background-color: #051C44;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #fdecec;
 }
 
 .body .project-cards .card-6 .body {
@@ -578,11 +573,10 @@ body a:hover {
 
 .body .project-cards .card-8 {
   width: 58%;
-  background-color: #06132a;
+  background-color: #F8C6C6;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #67cbaa;
 }
 
 .body .project-cards .card-8 .body {
@@ -677,11 +671,10 @@ body a:hover {
 
 .body .project-cards .card-9 {
   width: 58%;
-  background-color: #06132a;
+  background-color: #67CBAA;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #cbebfd;
 }
 
 .body .project-cards .card-9 .body {
@@ -722,11 +715,10 @@ body a:hover {
 
 .body .project-cards .card-10 {
   width: 39%;
-  background-color: #06132a;
+  background-color: #DBD0FB;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #fdecec;
 }
 
 .body .project-cards .card-10 .body {

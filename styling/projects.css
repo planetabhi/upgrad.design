@@ -621,7 +621,7 @@ body a:hover {
   width: 32vw;
 }
 
-.body .project-cards .card-9 {
+/*.body .project-cards .card-9 {
   width: 39%;
   background-color: #06132a;
   border-radius: 12px;
@@ -671,7 +671,108 @@ body a:hover {
 
 .body .project-cards .card-9 .img img {
   width: 32vw;
+}*/
+
+
+
+.body .project-cards .card-9 {
+  width: 58%;
+  background-color: #06132a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #cbebfd;
 }
+
+.body .project-cards .card-9 .body {
+  color: #ffffff;
+  font-family: circular;
+  width: 400px;
+  margin-left: 4vw;
+  margin-top: 6vh;
+}
+
+.body .project-cards .card-9 .body .heading {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.body .project-cards .card-9 .body .subheading {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 1vh;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+  opacity: 0.8;
+}
+
+.body .project-cards .card-9 .body {
+  margin-top: 6vh;
+  width: 72%;
+}
+
+.body .project-cards .card-9 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-9 .img img {
+  width: 32vw;
+}
+
+.body .project-cards .card-10 {
+  width: 39%;
+  background-color: #06132a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fdecec;
+}
+
+.body .project-cards .card-10 .body {
+  color: #ffffff;
+  font-family: circular;
+  width: 400px;
+  margin-left: 4vw;
+}
+
+.body .project-cards .card-10 .body .heading {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.body .project-cards .card-10 .body .subheading {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 1vh;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+  opacity: 0.8;
+}
+
+.body .project-cards .card-10 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-10 .img img {
+  width: 44vw;
+}
+
+.body .project-cards .card-10 .body {
+  margin-top: 6vh;
+  width: 72%;
+}
+
+.body .project-cards .card-10 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-10 .img img {
+  width: 32vw;
+}
+
+
 
 #menuToggle {
   display: block;

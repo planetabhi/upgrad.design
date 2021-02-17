@@ -57,17 +57,18 @@ body {
 		position: fixed;
 		transition: all 0.2s ease-in-out;
 		opacity: 0;
+		display: none;
 	}
 }
 
 .body {
 	margin-top: 16vh;
-	margin-bottom: 16vh;
+	margin-bottom: 8vh;
 
 	z-index: 99999;
 	.hero {
 		font-family: circular;
-		width: 30vw;
+		width: 40vw;
 		.heading-container {
 			font-size: 60px;
 			letter-spacing: -2.4px;
@@ -98,46 +99,137 @@ body {
 		margin-top: 16vh;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2vw;
+		gap: 1vw;
 
 		.card-1 {
 			@include project-card-big;
-			height: 60vh;
+			background-color: #071936;
+			height: 540px;
+			.body {
+				margin-top: 6vh;
+			}
 			.img {
-				// margin-top: 12vh;
-				// flex-basis: 70%;
-				// background-image: url(/resources/images/macbook-search.png);
-				// background-size: contain;
-				// background-repeat: no-repeat;
-				// background-position-x: right;
-				// background-position-x: bottom;
+				text-align: center;
+				img {
+					width: 44vw;
+				}
 			}
 		}
 		.card-2 {
 			@include project-card-small;
-			background-color: #f3b119;
-			height: 60vh;
+			background-color: #e77059;
+			height: 540px;
+
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
 		}
 		.card-3 {
 			@include project-card-small;
 			background-color: #c676ae;
-			height: 60vh;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
 		}
 		.card-4 {
 			@include project-card-big;
 			background-color: #02a971;
-			height: 60vh;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
 		}
 		.card-5 {
 			@include project-card-big;
-			background-color: #7c8698;
-			height: 60vh;
+			background-color: #cbebfd;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
 		}
-
 		.card-6 {
 			@include project-card-small;
-			background-color: #2badf8;
-			height: 60vh;
+			background-color: #fdecec;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
+		}
+		.card-7 {
+			@include project-card-small;
+			background-color: #fff;
+			border: 1px $g-600 solid;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+				color: $g-900;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
+		}
+		.card-8 {
+			@include project-card-big;
+			background-color: #67cbaa;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
+		}
+		.card-9 {
+			@include project-card-small;
+			background-color: #9473f2;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 32vw;
+				}
+			}
 		}
 	}
 }
@@ -254,7 +346,7 @@ body {
 	position: fixed;
 	z-index: -1;
 	transition: all 0.2s ease-in-out;
-
+	display: none;
 	.circle-1 {
 		position: absolute;
 		z-index: 999;
@@ -371,12 +463,9 @@ body {
 				}
 			}
 			.card-2 {
-				margin-top: 24px;
-
 				.body {
+					width: 72%;
 					margin-left: 8vw;
-
-					width: 80%;
 					.heading {
 						font-size: 32px;
 					}

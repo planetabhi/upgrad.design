@@ -1261,8 +1261,8 @@ body a:hover {
   }
   .header {
     width: 102vw;
-    margin-top: 24px;
-    margin-bottom: 20px;
+    margin-top: 24px !important;
+    margin-bottom: 28px;
   }
   .header .right {
     margin-right: 6vw;

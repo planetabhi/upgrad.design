@@ -177,7 +177,7 @@ body a:hover {
 }
 
 .body {
-  margin-top: 16vh;
+  margin-top: 12vh;
   margin-bottom: 8vh;
   z-index: 99999;
 }
@@ -221,7 +221,7 @@ body a:hover {
 }
 
 .body .project-cards {
-  margin-top: 16vh;
+  margin-top: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,13 +231,13 @@ body a:hover {
 }
 
 .body .project-cards .card-1 {
-  width: 58%;
+  width: 59.8%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   background-color: #071936;
-  height: 540px;
+  height: 600px;
 }
 
 .body .project-cards .card-1 .body {
@@ -281,8 +281,8 @@ body a:hover {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #e77059;
-  height: 540px;
+  background-color: #c676ae;
+  height: 600px;
 }
 
 .body .project-cards .card-2 .body {
@@ -334,7 +334,8 @@ body a:hover {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #c676ae;
+  background-color: #e95454;
+  height: 600px;
 }
 
 .body .project-cards .card-3 .body {
@@ -377,16 +378,17 @@ body a:hover {
 }
 
 .body .project-cards .card-3 .img img {
-  width: 32vw;
+  width: 16vw;
 }
 
 .body .project-cards .card-4 {
-  width: 58%;
+  width: 59.8%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   background-color: #02a971;
+  height: 600px;
 }
 
 .body .project-cards .card-4 .body {
@@ -426,12 +428,13 @@ body a:hover {
 }
 
 .body .project-cards .card-5 {
-  width: 58%;
+  width: 59.8%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   background-color: #cbebfd;
+  height: 600px;
 }
 
 .body .project-cards .card-5 .body {
@@ -460,6 +463,7 @@ body a:hover {
 .body .project-cards .card-5 .body {
   margin-top: 6vh;
   width: 72%;
+  color: #1a202c;
 }
 
 .body .project-cards .card-5 .img {
@@ -477,6 +481,7 @@ body a:hover {
   overflow: hidden;
   cursor: pointer;
   background-color: #fdecec;
+  height: 600px;
 }
 
 .body .project-cards .card-6 .body {
@@ -510,6 +515,7 @@ body a:hover {
 }
 
 .body .project-cards .card-6 .body {
+  color: #1a202c;
   margin-top: 6vh;
   width: 72%;
 }
@@ -519,7 +525,7 @@ body a:hover {
 }
 
 .body .project-cards .card-6 .img img {
-  width: 32vw;
+  width: 18vw;
 }
 
 .body .project-cards .card-7 {
@@ -528,8 +534,8 @@ body a:hover {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #fff;
-  border: 1px #7c8698 solid;
+  background-color: #f4f5f7;
+  height: 600px;
 }
 
 .body .project-cards .card-7 .body {
@@ -577,12 +583,13 @@ body a:hover {
 }
 
 .body .project-cards .card-8 {
-  width: 58%;
+  width: 59.8%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   background-color: #67cbaa;
+  height: 600px;
 }
 
 .body .project-cards .card-8 .body {
@@ -618,16 +625,17 @@ body a:hover {
 }
 
 .body .project-cards .card-8 .img img {
-  width: 32vw;
+  width: 40vw;
 }
 
 .body .project-cards .card-9 {
-  width: 39%;
+  width: 59.8%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   background-color: #9473f2;
+  height: 600px;
 }
 
 .body .project-cards .card-9 .body {
@@ -635,6 +643,7 @@ body a:hover {
   font-family: circular;
   width: 400px;
   margin-left: 4vw;
+  margin-top: 6vh;
 }
 
 .body .project-cards .card-9 .body .heading {
@@ -652,14 +661,6 @@ body a:hover {
   opacity: 0.8;
 }
 
-.body .project-cards .card-9 .img {
-  text-align: center;
-}
-
-.body .project-cards .card-9 .img img {
-  width: 44vw;
-}
-
 .body .project-cards .card-9 .body {
   margin-top: 6vh;
   width: 72%;
@@ -670,6 +671,59 @@ body a:hover {
 }
 
 .body .project-cards .card-9 .img img {
+  width: 32vw;
+}
+
+.body .project-cards .card-10 {
+  width: 39%;
+  background-color: #06132a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #1a202c;
+  height: 600px;
+}
+
+.body .project-cards .card-10 .body {
+  color: #ffffff;
+  font-family: circular;
+  width: 400px;
+  margin-left: 4vw;
+}
+
+.body .project-cards .card-10 .body .heading {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.body .project-cards .card-10 .body .subheading {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 1vh;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+  opacity: 0.8;
+}
+
+.body .project-cards .card-10 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-10 .img img {
+  width: 44vw;
+}
+
+.body .project-cards .card-10 .body {
+  margin-top: 6vh;
+  width: 72%;
+}
+
+.body .project-cards .card-10 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-10 .img img {
   width: 32vw;
 }
 

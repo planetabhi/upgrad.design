@@ -62,7 +62,7 @@ body {
 }
 
 .body {
-	margin-top: 16vh;
+	margin-top: 12vh;
 	margin-bottom: 8vh;
 
 	z-index: 99999;
@@ -96,7 +96,7 @@ body {
 		}
 	}
 	.project-cards {
-		margin-top: 16vh;
+		margin-top: 12vh;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1vw;
@@ -104,7 +104,7 @@ body {
 		.card-1 {
 			@include project-card-big;
 			background-color: #071936;
-			height: 540px;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 			}
@@ -117,9 +117,8 @@ body {
 		}
 		.card-2 {
 			@include project-card-small;
-			background-color: #e77059;
-			height: 540px;
-
+			background-color: #c676ae;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 				width: 72%;
@@ -133,7 +132,8 @@ body {
 		}
 		.card-3 {
 			@include project-card-small;
-			background-color: #c676ae;
+			background-color: #e95454;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 				width: 72%;
@@ -141,13 +141,14 @@ body {
 			.img {
 				text-align: center;
 				img {
-					width: 32vw;
+					width: 16vw;
 				}
 			}
 		}
 		.card-4 {
 			@include project-card-big;
 			background-color: #02a971;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 				width: 72%;
@@ -162,9 +163,11 @@ body {
 		.card-5 {
 			@include project-card-big;
 			background-color: #cbebfd;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 				width: 72%;
+				color: $g-900;
 			}
 			.img {
 				text-align: center;
@@ -176,21 +179,23 @@ body {
 		.card-6 {
 			@include project-card-small;
 			background-color: #fdecec;
+			height: 600px;
 			.body {
+				color: $g-900;
 				margin-top: 6vh;
 				width: 72%;
 			}
 			.img {
 				text-align: center;
 				img {
-					width: 32vw;
+					width: 18vw;
 				}
 			}
 		}
 		.card-7 {
 			@include project-card-small;
-			background-color: #fff;
-			border: 1px $g-600 solid;
+			background-color: $g-300;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 				width: 72%;
@@ -206,6 +211,22 @@ body {
 		.card-8 {
 			@include project-card-big;
 			background-color: #67cbaa;
+			height: 600px;
+			.body {
+				margin-top: 6vh;
+				width: 72%;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 40vw;
+				}
+			}
+		}
+		.card-9 {
+			@include project-card-big;
+			background-color: #9473f2;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 				width: 72%;
@@ -217,9 +238,10 @@ body {
 				}
 			}
 		}
-		.card-9 {
+		.card-10 {
 			@include project-card-small;
-			background-color: #9473f2;
+			background-color: $g-900;
+			height: 600px;
 			.body {
 				margin-top: 6vh;
 				width: 72%;

@@ -69,7 +69,7 @@ $g-900: #1a202c;
 }
 
 @mixin project-card-big {
-	width: 58%;
+	width: 59.8%;
 	background-color: #06132a;
 	border-radius: 12px;
 	overflow: hidden;
@@ -96,6 +96,7 @@ $g-900: #1a202c;
 		}
 	}
 }
+
 @mixin project-card-small {
 	width: 39%;
 	background-color: #06132a;

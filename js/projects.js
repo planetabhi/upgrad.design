@@ -6,8 +6,14 @@ ScrollReveal().reveal('.card-1', {
 	duration: 400,
 	distance: '40px',
 	mobile: false,
-	afterReveal: function cleanAnimation() {
-		ScrollReveal().clean('card-2');
+	_afterReveal: function cleanAnimation() {
+		ScrollReveal().clean('card-1');
+	},
+	get afterReveal() {
+		return this._afterReveal;
+	},
+	set afterReveal(value) {
+		this._afterReveal = value;
 	},
 });
 
@@ -102,6 +108,28 @@ ScrollReveal().reveal('.card-9', {
 });
 
 ScrollReveal().reveal('.card-10', {
+	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
+	distance: '8px',
+	delay: 200,
+	scale: 0.98,
+	duration: 400,
+	distance: '40px',
+	viewFactor: 0.3,
+	mobile: false,
+});
+
+ScrollReveal().reveal('.card-11', {
+	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
+	distance: '8px',
+	delay: 0,
+	scale: 0.98,
+	duration: 400,
+	distance: '40px',
+	viewFactor: 0.3,
+	mobile: false,
+});
+
+ScrollReveal().reveal('.card-12', {
 	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
 	distance: '8px',
 	delay: 200,

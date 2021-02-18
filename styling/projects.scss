@@ -67,7 +67,7 @@ body {
 
 	z-index: 99999;
 	.hero {
-		font-family: circular;
+		font-family: 'circular', Helvetica, sans-serif;
 		width: 40vw;
 		.heading-container {
 			font-size: 60px;
@@ -386,7 +386,7 @@ body {
 	position: fixed;
 	z-index: -1;
 	transition: all 0.2s ease-in-out;
-	display: none;
+	display: block;
 	.circle-1 {
 		position: absolute;
 		z-index: 999;
@@ -786,6 +786,32 @@ body {
 				}
 			}
 			.card-10 {
+				width: 100%;
+				margin-top: 8px;
+				.body {
+					width: 80%;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
+					}
+				}
+			}
+			.card-11 {
+				width: 100%;
+				margin-top: 8px;
+				.body {
+					width: 80%;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
+					}
+				}
+			}
+			.card-12 {
 				width: 100%;
 				margin-top: 8px;
 				.body {

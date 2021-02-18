@@ -183,7 +183,7 @@ body a:hover {
 }
 
 .body .hero {
-  font-family: circular;
+  font-family: 'circular', Helvetica, sans-serif;
   width: 40vw;
 }
 
@@ -1011,7 +1011,7 @@ body a:hover {
   z-index: -1;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  display: none;
+  display: block;
 }
 
 .gradients .circle-1 {
@@ -1395,6 +1395,28 @@ body a:hover {
     margin-left: 8vw;
   }
   .body .project-cards .card-10 .img img {
+    width: 72vw;
+  }
+  .body .project-cards .card-11 {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .body .project-cards .card-11 .body {
+    width: 80%;
+    margin-left: 8vw;
+  }
+  .body .project-cards .card-11 .img img {
+    width: 72vw;
+  }
+  .body .project-cards .card-12 {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .body .project-cards .card-12 .body {
+    width: 80%;
+    margin-left: 8vw;
+  }
+  .body .project-cards .card-12 .img img {
     width: 72vw;
   }
   #menu {

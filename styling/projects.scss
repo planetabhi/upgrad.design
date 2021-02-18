@@ -104,10 +104,6 @@ body {
 		.card-1 {
 			@include project-card-big;
 			background-color: #071936;
-			height: 600px;
-			.body {
-				margin-top: 6vh;
-			}
 			.img {
 				text-align: center;
 				img {
@@ -118,11 +114,6 @@ body {
 		.card-2 {
 			@include project-card-small;
 			background-color: #c676ae;
-			height: 600px;
-			.body {
-				margin-top: 6vh;
-				width: 72%;
-			}
 			.img {
 				text-align: center;
 				img {
@@ -133,26 +124,16 @@ body {
 		.card-3 {
 			@include project-card-small;
 			background-color: #e95454;
-			height: 600px;
-			.body {
-				margin-top: 6vh;
-				width: 72%;
-			}
 			.img {
-				text-align: center;
 				img {
-					width: 16vw;
+					width: 30vw;
 				}
 			}
 		}
 		.card-4 {
 			@include project-card-big;
 			background-color: #02a971;
-			height: 600px;
-			.body {
-				margin-top: 6vh;
-				width: 72%;
-			}
+
 			.img {
 				text-align: center;
 				img {
@@ -163,10 +144,7 @@ body {
 		.card-5 {
 			@include project-card-big;
 			background-color: #cbebfd;
-			height: 600px;
 			.body {
-				margin-top: 6vh;
-				width: 72%;
 				color: $g-900;
 			}
 			.img {
@@ -178,12 +156,8 @@ body {
 		}
 		.card-6 {
 			@include project-card-small;
-			background-color: #fdecec;
-			height: 600px;
+			background-color: #061d45;
 			.body {
-				color: $g-900;
-				margin-top: 6vh;
-				width: 72%;
 			}
 			.img {
 				text-align: center;
@@ -195,10 +169,7 @@ body {
 		.card-7 {
 			@include project-card-small;
 			background-color: $g-300;
-			height: 600px;
 			.body {
-				margin-top: 6vh;
-				width: 72%;
 				color: $g-900;
 			}
 			.img {
@@ -211,9 +182,7 @@ body {
 		.card-8 {
 			@include project-card-big;
 			background-color: #67cbaa;
-			height: 600px;
 			.body {
-				margin-top: 6vh;
 				width: 72%;
 			}
 			.img {
@@ -226,13 +195,10 @@ body {
 		.card-9 {
 			@include project-card-big;
 			background-color: #9473f2;
-			height: 600px;
 			.body {
-				margin-top: 6vh;
 				width: 72%;
 			}
 			.img {
-				text-align: center;
 				img {
 					width: 32vw;
 				}
@@ -241,10 +207,7 @@ body {
 		.card-10 {
 			@include project-card-small;
 			background-color: $g-900;
-			height: 600px;
 			.body {
-				margin-top: 6vh;
-				width: 72%;
 			}
 			.img {
 				text-align: center;
@@ -368,7 +331,6 @@ body {
 	position: fixed;
 	z-index: -1;
 	transition: all 0.2s ease-in-out;
-	display: none;
 	.circle-1 {
 		position: absolute;
 		z-index: 999;
@@ -378,7 +340,7 @@ body {
 		background-color: #f3a0a0;
 		filter: blur(500px);
 		transform: translate(48vw, -30vh);
-		animation: mover-1 10s ease infinite forwards;
+		//animation: mover-1 10s ease infinite forwards;
 
 		@keyframes mover-1 {
 			0% {
@@ -453,6 +415,56 @@ body {
 		.hero {
 			width: 50vw;
 		}
+		.project-cards {
+			.card-1 {
+				height: 480px;
+			}
+			.card-2 {
+				height: 480px;
+			}
+			.card-3 {
+				height: 480px;
+			}
+			.card-4 {
+				height: 480px;
+				.img {
+					img {
+						width: 44vw;
+					}
+				}
+			}
+			.card-5 {
+				height: 480px;
+				.img {
+					img {
+						width: 44vw;
+					}
+				}
+			}
+			.card-6 {
+				height: 480px;
+			}
+			.card-7 {
+				height: 480px;
+			}
+			.card-8 {
+				.img {
+					img {
+						width: 50vw;
+					}
+				}
+			}
+			.card-9 {
+				.img {
+					img {
+						width: 40vw;
+					}
+				}
+			}
+			.card-10 {
+				height: 480px;
+			}
+		}
 	}
 	#menu {
 		margin-left: -560px;
@@ -473,91 +485,111 @@ body {
 		.project-cards {
 			.card-1 {
 				.body {
-					margin-left: 8vw;
-					width: 80%;
 					.heading {
-						font-size: 32px;
+						font-size: 30px;
 					}
 					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+						font-size: 20px;
+						line-height: 32px;
 					}
 				}
 			}
 			.card-2 {
 				.body {
-					width: 72%;
-					margin-left: 8vw;
 					.heading {
-						font-size: 32px;
+						font-size: 30px;
 					}
 					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+						font-size: 20px;
+						line-height: 32px;
 					}
 				}
 			}
 			.card-3 {
-				margin-top: 24px;
-
 				.body {
-					margin-left: 8vw;
-
-					width: 80%;
 					.heading {
-						font-size: 32px;
+						font-size: 30px;
 					}
 					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+						font-size: 20px;
+						line-height: 32px;
 					}
 				}
 			}
 			.card-4 {
-				margin-top: 24px;
-
 				.body {
-					margin-left: 8vw;
-
-					width: 80%;
 					.heading {
-						font-size: 32px;
+						font-size: 30px;
 					}
 					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+						font-size: 20px;
+						line-height: 32px;
 					}
 				}
 			}
 			.card-5 {
-				margin-top: 24px;
-
 				.body {
-					margin-left: 8vw;
-
-					width: 80%;
 					.heading {
-						font-size: 32px;
+						font-size: 30px;
 					}
 					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+						font-size: 20px;
+						line-height: 32px;
 					}
 				}
 			}
 			.card-6 {
-				margin-top: 24px;
-
 				.body {
-					margin-left: 8vw;
-
-					width: 80%;
 					.heading {
-						font-size: 32px;
+						font-size: 30px;
 					}
 					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+						font-size: 20px;
+						line-height: 32px;
+					}
+				}
+			}
+			.card-7 {
+				.body {
+					.heading {
+						font-size: 30px;
+					}
+					.subheading {
+						font-size: 20px;
+						line-height: 32px;
+					}
+				}
+			}
+			.card-8 {
+				.body {
+					.heading {
+						font-size: 30px;
+					}
+					.subheading {
+						font-size: 20px;
+						line-height: 32px;
+					}
+				}
+			}
+			.card-9 {
+				.body {
+					.heading {
+						font-size: 30px;
+					}
+					.subheading {
+						font-size: 20px;
+						line-height: 32px;
+					}
+				}
+			}
+			.card-10 {
+				.body {
+					.heading {
+						font-size: 30px;
+					}
+					.subheading {
+						font-size: 20px;
+						line-height: 32px;
 					}
 				}
 			}
@@ -582,92 +614,131 @@ body {
 		}
 		.project-cards {
 			.card-1 {
-				margin-top: 24px;
-
 				width: 100%;
 				.body {
 					width: 80%;
-					.heading {
-						font-size: 32px;
-					}
-					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
 					}
 				}
 			}
 			.card-2 {
 				width: 100%;
-				margin-top: 24px;
-
+				margin-top: 8px;
 				.body {
 					width: 80%;
-					.heading {
-						font-size: 32px;
-					}
-					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
 					}
 				}
 			}
 			.card-3 {
 				width: 100%;
-				margin-top: 24px;
-
+				margin-top: 8px;
 				.body {
 					width: 80%;
-					.heading {
-						font-size: 32px;
-					}
-					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
 					}
 				}
 			}
 			.card-4 {
 				width: 100%;
-				margin-top: 24px;
-
+				margin-top: 8px;
 				.body {
 					width: 80%;
-					.heading {
-						font-size: 32px;
-					}
-					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
 					}
 				}
 			}
 			.card-5 {
 				width: 100%;
-				margin-top: 24px;
-
+				margin-top: 8px;
 				.body {
 					width: 80%;
-					.heading {
-						font-size: 32px;
-					}
-					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
 					}
 				}
 			}
 			.card-6 {
 				width: 100%;
-				margin-top: 24px;
-
+				margin-top: 8px;
 				.body {
 					width: 80%;
-					.heading {
-						font-size: 32px;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
 					}
-					.subheading {
-						font-size: 18px;
-						margin-top: 0;
+				}
+			}
+			.card-7 {
+				width: 100%;
+				margin-top: 8px;
+				.body {
+					width: 80%;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
+					}
+				}
+			}
+			.card-8 {
+				width: 100%;
+				margin-top: 8px;
+				.body {
+					width: 80%;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
+					}
+				}
+			}
+			.card-9 {
+				width: 100%;
+				margin-top: 8px;
+				.body {
+					width: 80%;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
+					}
+				}
+			}
+			.card-10 {
+				width: 100%;
+				margin-top: 8px;
+				.body {
+					width: 80%;
+					margin-left: 8vw;
+				}
+				.img {
+					img {
+						width: 72vw;
 					}
 				}
 			}
@@ -680,6 +751,27 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+	body {
+		margin-left: 6vw;
+		margin-right: 6vw;
+	}
+	.header {
+		width: 102vw;
+		margin-top: 24px;
+		margin-bottom: 20px;
+		.right {
+			margin-right: 6vw;
+			span {
+				width: 32px;
+				margin-bottom: 4px;
+			}
+		}
+		.left {
+			img {
+				transform: scale(0.9);
+			}
+		}
+	}
 	.body {
 		.hero {
 			width: 80vw;

@@ -69,6 +69,7 @@ $g-900: #1a202c;
 }
 
 @mixin project-card-big {
+	height: 560px;
 	width: 59.8%;
 	background-color: #06132a;
 	border-radius: 12px;
@@ -77,9 +78,9 @@ $g-900: #1a202c;
 	.body {
 		color: $g-100;
 		font-family: circular;
-		width: 400px;
 		margin-left: 4vw;
-		margin-top: 6vh;
+		margin-top: 8vh;
+		width: 72%;
 
 		.heading {
 			font-size: 36px;
@@ -95,9 +96,16 @@ $g-900: #1a202c;
 			opacity: 0.8;
 		}
 	}
+	.img {
+		text-align: center;
+		img {
+			width: 44vw;
+		}
+	}
 }
 
 @mixin project-card-small {
+	height: 560px;
 	width: 39%;
 	background-color: #06132a;
 	border-radius: 12px;
@@ -106,8 +114,9 @@ $g-900: #1a202c;
 
 	.body {
 		color: $g-100;
+		width: 72%;
 		font-family: circular;
-		width: 400px;
+		margin-top: 8vh;
 		margin-left: 4vw;
 
 		.heading {

@@ -1,9 +1,14 @@
 $g-100: #ffffff;
 $g-300: #f4f5f7;
+$g-400: #dfe1e6;
 $g-600: #7c8698;
 $g-700: #4a5568;
 $g-800: #2d3748;
 $g-900: #1a202c;
+$red-100: #fdecec;
+$green-100: #e6f6f1;
+$violet-100: #dbd0fb;
+$blue-100: #ebf2ff;
 
 @font-face {
 	src: url(/resources/fonts/Circular/CircularStd-Light.ttf);
@@ -80,6 +85,7 @@ $g-900: #1a202c;
 		font-family: circular;
 		margin-left: 4vw;
 		margin-top: 8vh;
+		margin-bottom: 6vh;
 		width: 72%;
 
 		.heading {
@@ -106,7 +112,7 @@ $g-900: #1a202c;
 
 @mixin project-card-small {
 	height: 560px;
-	width: 39%;
+	width: 38%;
 	background-color: #06132a;
 	border-radius: 12px;
 	overflow: hidden;
@@ -118,6 +124,7 @@ $g-900: #1a202c;
 		font-family: circular;
 		margin-top: 8vh;
 		margin-left: 4vw;
+		margin-bottom: 6vh;
 
 		.heading {
 			font-size: 36px;

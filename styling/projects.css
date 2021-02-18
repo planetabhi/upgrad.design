@@ -245,6 +245,7 @@ body a:hover {
   font-family: circular;
   margin-left: 4vw;
   margin-top: 8vh;
+  margin-bottom: 6vh;
   width: 72%;
 }
 
@@ -281,12 +282,13 @@ body a:hover {
 
 .body .project-cards .card-2 {
   height: 560px;
-  width: 39%;
+  width: 38%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #c676ae;
+  border: 1px solid #dfe1e6;
+  background-color: transparent;
 }
 
 .body .project-cards .card-2 .body {
@@ -295,6 +297,7 @@ body a:hover {
   font-family: circular;
   margin-top: 8vh;
   margin-left: 4vw;
+  margin-bottom: 6vh;
 }
 
 .body .project-cards .card-2 .body .heading {
@@ -320,6 +323,10 @@ body a:hover {
   width: 44vw;
 }
 
+.body .project-cards .card-2 .body {
+  color: #1a202c;
+}
+
 .body .project-cards .card-2 .img {
   text-align: center;
 }
@@ -330,12 +337,13 @@ body a:hover {
 
 .body .project-cards .card-3 {
   height: 560px;
-  width: 39%;
+  width: 38%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #e95454;
+  border: 1px solid #dfe1e6;
+  background-color: transparent;
 }
 
 .body .project-cards .card-3 .body {
@@ -344,6 +352,7 @@ body a:hover {
   font-family: circular;
   margin-top: 8vh;
   margin-left: 4vw;
+  margin-bottom: 6vh;
 }
 
 .body .project-cards .card-3 .body .heading {
@@ -369,6 +378,10 @@ body a:hover {
   width: 44vw;
 }
 
+.body .project-cards .card-3 .body {
+  color: #1a202c;
+}
+
 .body .project-cards .card-3 .img img {
   width: 30vw;
 }
@@ -380,7 +393,7 @@ body a:hover {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #02a971;
+  background-color: #f4f5f7;
 }
 
 .body .project-cards .card-4 .body {
@@ -388,6 +401,7 @@ body a:hover {
   font-family: circular;
   margin-left: 4vw;
   margin-top: 8vh;
+  margin-bottom: 6vh;
   width: 72%;
 }
 
@@ -414,6 +428,10 @@ body a:hover {
   width: 44vw;
 }
 
+.body .project-cards .card-4 .body {
+  color: #1a202c;
+}
+
 .body .project-cards .card-4 .img {
   text-align: center;
 }
@@ -429,7 +447,7 @@ body a:hover {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #cbebfd;
+  background-color: #fdecec;
 }
 
 .body .project-cards .card-5 .body {
@@ -437,6 +455,7 @@ body a:hover {
   font-family: circular;
   margin-left: 4vw;
   margin-top: 8vh;
+  margin-bottom: 6vh;
   width: 72%;
 }
 
@@ -477,7 +496,7 @@ body a:hover {
 
 .body .project-cards .card-6 {
   height: 560px;
-  width: 39%;
+  width: 38%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
@@ -491,6 +510,7 @@ body a:hover {
   font-family: circular;
   margin-top: 8vh;
   margin-left: 4vw;
+  margin-bottom: 6vh;
 }
 
 .body .project-cards .card-6 .body .heading {
@@ -526,12 +546,13 @@ body a:hover {
 
 .body .project-cards .card-7 {
   height: 560px;
-  width: 39%;
+  width: 38%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #f4f5f7;
+  border: 1px solid #dfe1e6;
+  background-color: transparent;
 }
 
 .body .project-cards .card-7 .body {
@@ -540,6 +561,7 @@ body a:hover {
   font-family: circular;
   margin-top: 8vh;
   margin-left: 4vw;
+  margin-bottom: 6vh;
 }
 
 .body .project-cards .card-7 .body .heading {
@@ -584,7 +606,7 @@ body a:hover {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #67cbaa;
+  background-color: #e6f6f1;
 }
 
 .body .project-cards .card-8 .body {
@@ -592,6 +614,7 @@ body a:hover {
   font-family: circular;
   margin-left: 4vw;
   margin-top: 8vh;
+  margin-bottom: 6vh;
   width: 72%;
 }
 
@@ -619,7 +642,7 @@ body a:hover {
 }
 
 .body .project-cards .card-8 .body {
-  width: 72%;
+  color: #1a202c;
 }
 
 .body .project-cards .card-8 .img {
@@ -627,7 +650,7 @@ body a:hover {
 }
 
 .body .project-cards .card-8 .img img {
-  width: 40vw;
+  width: 16vw;
 }
 
 .body .project-cards .card-9 {
@@ -637,7 +660,7 @@ body a:hover {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #9473f2;
+  background-color: #dbd0fb;
 }
 
 .body .project-cards .card-9 .body {
@@ -645,6 +668,7 @@ body a:hover {
   font-family: circular;
   margin-left: 4vw;
   margin-top: 8vh;
+  margin-bottom: 6vh;
   width: 72%;
 }
 
@@ -672,7 +696,7 @@ body a:hover {
 }
 
 .body .project-cards .card-9 .body {
-  width: 72%;
+  color: #1a202c;
 }
 
 .body .project-cards .card-9 .img img {
@@ -681,12 +705,12 @@ body a:hover {
 
 .body .project-cards .card-10 {
   height: 560px;
-  width: 39%;
+  width: 38%;
   background-color: #06132a;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #1a202c;
+  background-color: #f8f7f6;
 }
 
 .body .project-cards .card-10 .body {
@@ -695,6 +719,7 @@ body a:hover {
   font-family: circular;
   margin-top: 8vh;
   margin-left: 4vw;
+  margin-bottom: 6vh;
 }
 
 .body .project-cards .card-10 .body .heading {
@@ -720,12 +745,139 @@ body a:hover {
   width: 44vw;
 }
 
+.body .project-cards .card-10 .body {
+  color: #1a202c;
+}
+
 .body .project-cards .card-10 .img {
   text-align: center;
 }
 
 .body .project-cards .card-10 .img img {
-  width: 32vw;
+  width: 24vw;
+}
+
+.body .project-cards .card-11 {
+  height: 560px;
+  width: 38%;
+  background-color: #06132a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #dfe1e6;
+  background-color: transparent;
+  text-align: center;
+}
+
+.body .project-cards .card-11 .body {
+  color: #ffffff;
+  width: 72%;
+  font-family: circular;
+  margin-top: 8vh;
+  margin-left: 4vw;
+  margin-bottom: 6vh;
+}
+
+.body .project-cards .card-11 .body .heading {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.body .project-cards .card-11 .body .subheading {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 1vh;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+  opacity: 0.8;
+}
+
+.body .project-cards .card-11 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-11 .img img {
+  width: 44vw;
+}
+
+.body .project-cards .card-11 .body {
+  color: #1a202c;
+}
+
+.body .project-cards .card-11 .body .subheading {
+  color: #1a202c;
+  opacity: 1;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 16vh;
+}
+
+.body .project-cards .card-11 button {
+  margin-top: 1vh;
+  padding: 18px 24px;
+  font-family: circular;
+  font-size: 18px;
+  border-radius: 8px;
+  background: #e95454;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.body .project-cards .card-12 {
+  height: 560px;
+  width: 59.8%;
+  background-color: #06132a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #ebf2ff;
+}
+
+.body .project-cards .card-12 .body {
+  color: #ffffff;
+  font-family: circular;
+  margin-left: 4vw;
+  margin-top: 8vh;
+  margin-bottom: 6vh;
+  width: 72%;
+}
+
+.body .project-cards .card-12 .body .heading {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.body .project-cards .card-12 .body .subheading {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: 1vh;
+  line-height: 36px;
+  letter-spacing: -0.4px;
+  opacity: 0.8;
+}
+
+.body .project-cards .card-12 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-12 .img img {
+  width: 44vw;
+}
+
+.body .project-cards .card-12 .body {
+  color: #1a202c;
+}
+
+.body .project-cards .card-12 .img {
+  text-align: center;
+}
+
+.body .project-cards .card-12 .img img {
+  width: 18vw;
 }
 
 #menuToggle {
@@ -859,6 +1011,7 @@ body a:hover {
   z-index: -1;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  display: none;
 }
 
 .gradients .circle-1 {
@@ -915,8 +1068,6 @@ body a:hover {
           filter: blur(500px);
   -webkit-transform: translate(10vw, -8vh);
           transform: translate(10vw, -8vh);
-  -webkit-animation: mover-2 8s ease 2s infinite forwards;
-          animation: mover-2 8s ease 2s infinite forwards;
 }
 
 @-webkit-keyframes mover-2 {
@@ -960,8 +1111,6 @@ body a:hover {
           filter: blur(500px);
   -webkit-transform: translate(20vw, 32vh);
           transform: translate(20vw, 32vh);
-  -webkit-animation: mover-3 6s ease 4s infinite forwards;
-          animation: mover-3 6s ease 4s infinite forwards;
 }
 
 @-webkit-keyframes mover-3 {

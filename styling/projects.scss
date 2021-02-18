@@ -113,7 +113,11 @@ body {
 		}
 		.card-2 {
 			@include project-card-small;
-			background-color: #c676ae;
+			border: 1px solid $g-400;
+			background-color: transparent;
+			.body {
+				color: $g-900;
+			}
 			.img {
 				text-align: center;
 				img {
@@ -123,7 +127,11 @@ body {
 		}
 		.card-3 {
 			@include project-card-small;
-			background-color: #e95454;
+			border: 1px solid $g-400;
+			background-color: transparent;
+			.body {
+				color: $g-900;
+			}
 			.img {
 				img {
 					width: 30vw;
@@ -132,8 +140,10 @@ body {
 		}
 		.card-4 {
 			@include project-card-big;
-			background-color: #02a971;
-
+			background-color: $g-300;
+			.body {
+				color: $g-900;
+			}
 			.img {
 				text-align: center;
 				img {
@@ -143,7 +153,7 @@ body {
 		}
 		.card-5 {
 			@include project-card-big;
-			background-color: #cbebfd;
+			background-color: $red-100;
 			.body {
 				color: $g-900;
 			}
@@ -168,7 +178,8 @@ body {
 		}
 		.card-7 {
 			@include project-card-small;
-			background-color: $g-300;
+			border: 1px solid $g-400;
+			background-color: transparent;
 			.body {
 				color: $g-900;
 			}
@@ -181,22 +192,22 @@ body {
 		}
 		.card-8 {
 			@include project-card-big;
-			background-color: #67cbaa;
+			background-color: $green-100;
 			.body {
-				width: 72%;
+				color: $g-900;
 			}
 			.img {
 				text-align: center;
 				img {
-					width: 40vw;
+					width: 16vw;
 				}
 			}
 		}
 		.card-9 {
 			@include project-card-big;
-			background-color: #9473f2;
+			background-color: $violet-100;
 			.body {
-				width: 72%;
+				color: $g-900;
 			}
 			.img {
 				img {
@@ -206,13 +217,57 @@ body {
 		}
 		.card-10 {
 			@include project-card-small;
-			background-color: $g-900;
+			background-color: #f8f7f6;
 			.body {
+				color: $g-900;
 			}
 			.img {
 				text-align: center;
 				img {
-					width: 32vw;
+					width: 24vw;
+				}
+			}
+		}
+		.card-11 {
+			@include project-card-small;
+			border: 1px solid $g-400;
+			background-color: transparent;
+			text-align: center;
+			.body {
+				color: $g-900;
+
+				.subheading {
+					color: $g-900;
+					opacity: 1;
+					font-size: 24px;
+					font-weight: 400;
+					text-align: center;
+					margin-top: 16vh;
+				}
+			}
+
+			button {
+				margin-top: 1vh;
+				padding: 18px 24px;
+				font-family: circular;
+				font-size: 18px;
+				border-radius: 8px;
+				background: #e95454;
+				border: none;
+				color: $g-100;
+				cursor: pointer;
+			}
+		}
+		.card-12 {
+			@include project-card-big;
+			background-color: $blue-100;
+			.body {
+				color: $g-900;
+			}
+			.img {
+				text-align: center;
+				img {
+					width: 18vw;
 				}
 			}
 		}
@@ -331,6 +386,7 @@ body {
 	position: fixed;
 	z-index: -1;
 	transition: all 0.2s ease-in-out;
+	display: none;
 	.circle-1 {
 		position: absolute;
 		z-index: 999;
@@ -363,7 +419,7 @@ body {
 		background-color: #63c3fa;
 		filter: blur(500px);
 		transform: translate(10vw, -8vh);
-		animation: mover-2 8s ease 2s infinite forwards;
+		//animation: mover-2 8s ease 2s infinite forwards;
 
 		@keyframes mover-2 {
 			0% {
@@ -386,7 +442,7 @@ body {
 		background-color: #f6c24c;
 		filter: blur(500px);
 		transform: translate(20vw, 32vh);
-		animation: mover-3 6s ease 4s infinite forwards;
+		//animation: mover-3 6s ease 4s infinite forwards;
 
 		@keyframes mover-3 {
 			0% {

@@ -104,6 +104,8 @@ body {
 		.card-1 {
 			@include project-card-big;
 			background-color: #071936;
+			transition: all 0.3s ease;
+
 			.img {
 				text-align: center;
 				img {

@@ -80,6 +80,29 @@ $blue-100: #ebf2ff;
 	border-radius: 12px;
 	overflow: hidden;
 	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	.copy-link {
+		float: right;
+		font-family: 'circular', Helvetica, sans-serif;
+		display: flex;
+		align-items: center;
+		margin-top: 1vw;
+		margin-right: 1vw;
+		background-color: rgba(255, 255, 255, 0.1);
+		padding: 16px;
+		border-radius: 12px;
+		opacity: 0;
+		transition: all 0.1s ease-in-out;
+		.text {
+			color: $g-100;
+			font-size: 14px;
+			font-weight: 600;
+			margin-left: 0.5vw;
+		}
+		&:hover {
+			opacity: 1 !important;
+		}
+	}
 	.body {
 		color: $g-100;
 		font-family: 'circular', Helvetica, sans-serif;
@@ -109,6 +132,12 @@ $blue-100: #ebf2ff;
 		img {
 			width: 44vw;
 		}
+	}
+	&:hover {
+		transform: scale(1.01);
+	}
+	&:hover > .copy-link {
+		opacity: 0.5;
 	}
 }
 
@@ -149,5 +178,8 @@ $blue-100: #ebf2ff;
 		img {
 			width: 44vw;
 		}
+	}
+	&:hover {
+		transform: scale(1.01);
 	}
 }

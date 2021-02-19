@@ -73,6 +73,15 @@ $blue-100: #ebf2ff;
 	}
 }
 
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(36deg);
+	}
+}
+
 @mixin project-card-big {
 	height: 560px;
 	width: 59.8%;
@@ -86,18 +95,21 @@ $blue-100: #ebf2ff;
 		font-family: 'circular', Helvetica, sans-serif;
 		display: flex;
 		align-items: center;
-		margin-top: 1vw;
-		margin-right: 1vw;
+		margin-top: 0.8vw;
+		margin-right: 0.8vw;
 		background-color: rgba(255, 255, 255, 0.1);
-		padding: 16px;
-		border-radius: 12px;
+		padding: 12px 16px;
+		border-radius: 9px;
 		opacity: 0;
 		transition: all 0.1s ease-in-out;
 		.text {
 			color: $g-100;
-			font-size: 14px;
+			font-size: 12px;
 			font-weight: 600;
 			margin-left: 0.5vw;
+		}
+		img {
+			width: 18px;
 		}
 		&:hover {
 			opacity: 1 !important;
@@ -148,7 +160,33 @@ $blue-100: #ebf2ff;
 	border-radius: 12px;
 	overflow: hidden;
 	cursor: pointer;
+	transition: all 0.1s ease;
 
+	.copy-link {
+		float: right;
+		font-family: 'circular', Helvetica, sans-serif;
+		display: flex;
+		align-items: center;
+		margin-top: 0.8vw;
+		margin-right: 0.8vw;
+		background-color: rgba(255, 255, 255, 0.1);
+		padding: 12px 16px;
+		border-radius: 9px;
+		opacity: 0;
+		transition: all 0.1s ease-in-out;
+		.text {
+			color: $g-100;
+			font-size: 12px;
+			font-weight: 600;
+			margin-left: 0.5vw;
+		}
+		img {
+			width: 18px;
+		}
+		&:hover {
+			opacity: 1 !important;
+		}
+	}
 	.body {
 		color: $g-100;
 		width: 72%;
@@ -181,5 +219,8 @@ $blue-100: #ebf2ff;
 	}
 	&:hover {
 		transform: scale(1.01);
+	}
+	&:hover > .copy-link {
+		opacity: 0.5;
 	}
 }

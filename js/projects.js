@@ -1,17 +1,15 @@
-// ScrollReveal().reveal('.card-1', {
-// 	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
-// 	distance: '8px',
-// 	delay: 1500,
-// 	scale: 0.98,
-// 	duration: 400,
-// 	distance: '40px',
-// 	mobile: false,
-// 	afterReveal: myCallback(),
-// });
-
-function myCallback() {
-	ScrollReveal().clean('.card-1');
-}
+ScrollReveal().reveal('.card-1', {
+	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
+	distance: '8px',
+	delay: 1500,
+	scale: 0.98,
+	duration: 400,
+	distance: '40px',
+	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-1');
+	},
+});
 
 ScrollReveal().reveal('.card-2', {
 	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
@@ -21,8 +19,8 @@ ScrollReveal().reveal('.card-2', {
 	duration: 400,
 	distance: '40px',
 	mobile: false,
-	afterReveal: function cleanAnimation() {
-		ScrollReveal().clean('card-2');
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-2');
 	},
 });
 
@@ -35,6 +33,9 @@ ScrollReveal().reveal('.card-3', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-3');
+	},
 });
 
 ScrollReveal().reveal('.card-4', {
@@ -46,6 +47,9 @@ ScrollReveal().reveal('.card-4', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-4');
+	},
 });
 
 ScrollReveal().reveal('.card-5', {
@@ -57,6 +61,9 @@ ScrollReveal().reveal('.card-5', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-5');
+	},
 });
 
 ScrollReveal().reveal('.card-6', {
@@ -68,6 +75,9 @@ ScrollReveal().reveal('.card-6', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-6');
+	},
 });
 
 ScrollReveal().reveal('.card-7', {
@@ -79,6 +89,9 @@ ScrollReveal().reveal('.card-7', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-7');
+	},
 });
 
 ScrollReveal().reveal('.card-8', {
@@ -90,6 +103,9 @@ ScrollReveal().reveal('.card-8', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-8');
+	},
 });
 
 ScrollReveal().reveal('.card-9', {
@@ -101,6 +117,9 @@ ScrollReveal().reveal('.card-9', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-9');
+	},
 });
 
 ScrollReveal().reveal('.card-10', {
@@ -112,6 +131,9 @@ ScrollReveal().reveal('.card-10', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-10');
+	},
 });
 
 ScrollReveal().reveal('.card-11', {
@@ -123,6 +145,9 @@ ScrollReveal().reveal('.card-11', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-11');
+	},
 });
 
 ScrollReveal().reveal('.card-12', {
@@ -134,6 +159,9 @@ ScrollReveal().reveal('.card-12', {
 	distance: '40px',
 	viewFactor: 0.3,
 	mobile: false,
+	afterReveal: function clean() {
+		ScrollReveal().clean('.card-12');
+	},
 });
 
 $(document).on('scroll', function () {

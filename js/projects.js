@@ -1,10 +1,11 @@
 ScrollReveal().reveal('.card-1', {
 	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
 	distance: '8px',
-	delay: 1500,
+	delay: 0,
 	scale: 0.98,
 	duration: 400,
 	distance: '40px',
+	viewFactor: 0.3,
 	mobile: false,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-1');
@@ -14,10 +15,11 @@ ScrollReveal().reveal('.card-1', {
 ScrollReveal().reveal('.card-2', {
 	easing: 'cubic-bezier(0.65, 0, 0.35, 1)',
 	distance: '8px',
-	delay: 1700,
+	delay: 200,
 	scale: 0.98,
 	duration: 400,
 	distance: '40px',
+	viewFactor: 0.3,
 	mobile: false,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-2');

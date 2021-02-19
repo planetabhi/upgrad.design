@@ -6,7 +6,7 @@ ScrollReveal().reveal('.card-1', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-1');
 	},
@@ -20,7 +20,7 @@ ScrollReveal().reveal('.card-2', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-2');
 	},
@@ -34,7 +34,7 @@ ScrollReveal().reveal('.card-3', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-3');
 	},
@@ -48,7 +48,7 @@ ScrollReveal().reveal('.card-4', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-4');
 	},
@@ -62,7 +62,7 @@ ScrollReveal().reveal('.card-5', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-5');
 	},
@@ -76,7 +76,7 @@ ScrollReveal().reveal('.card-6', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-6');
 	},
@@ -90,7 +90,7 @@ ScrollReveal().reveal('.card-7', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-7');
 	},
@@ -104,7 +104,7 @@ ScrollReveal().reveal('.card-8', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-8');
 	},
@@ -118,7 +118,7 @@ ScrollReveal().reveal('.card-9', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-9');
 	},
@@ -132,7 +132,7 @@ ScrollReveal().reveal('.card-10', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-10');
 	},
@@ -146,7 +146,7 @@ ScrollReveal().reveal('.card-11', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-11');
 	},
@@ -160,7 +160,7 @@ ScrollReveal().reveal('.card-12', {
 	duration: 400,
 	distance: '40px',
 	viewFactor: 0.3,
-	mobile: false,
+	mobile: true,
 	afterReveal: function clean() {
 		ScrollReveal().clean('.card-12');
 	},

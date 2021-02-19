@@ -111,7 +111,7 @@ body {
 				}
 			}
 			&:hover {
-				box-shadow: 0px 8px 72px -30px rgba(7, 25, 54, 1);
+				box-shadow: 0px 32px 72px -30px rgba(7, 25, 54, 1);
 			}
 		}
 		.card-2 {
@@ -136,6 +136,9 @@ body {
 					width: 32vw;
 				}
 			}
+			&:hover {
+				box-shadow: 0px 32px 72px -30px rgba(143, 143, 143, 0.6);
+			}
 		}
 		.card-3 {
 			@include project-card-small;
@@ -157,6 +160,9 @@ body {
 				img {
 					width: 30vw;
 				}
+			}
+			&:hover {
+				box-shadow: 0px 32px 72px -30px rgba(143, 143, 143, 0.6);
 			}
 		}
 		.card-4 {
@@ -180,6 +186,9 @@ body {
 					width: 32vw;
 				}
 			}
+			&:hover {
+				box-shadow: 0px 32px 72px -30px rgba(56, 56, 56, 0.3);
+			}
 		}
 		.card-5 {
 			@include project-card-big;
@@ -202,6 +211,9 @@ body {
 					width: 32vw;
 				}
 			}
+			&:hover {
+				box-shadow: 0px 0px 69px -30px rgba(253, 236, 236, 1);
+			}
 		}
 		.card-6 {
 			@include project-card-small;
@@ -213,6 +225,9 @@ body {
 				img {
 					width: 18vw;
 				}
+			}
+			&:hover {
+				box-shadow: 0px 32px 72px -30px rgba(7, 25, 54, 1);
 			}
 		}
 		.card-7 {
@@ -237,6 +252,9 @@ body {
 					width: 32vw;
 				}
 			}
+			&:hover {
+				box-shadow: 0px 32px 72px -30px rgba(143, 143, 143, 0.6);
+			}
 		}
 		.card-8 {
 			@include project-card-big;
@@ -259,6 +277,9 @@ body {
 					width: 16vw;
 				}
 			}
+			&:hover {
+				box-shadow: 0px 0px 69px -30px rgba(135, 230, 200, 1);
+			}
 		}
 		.card-9 {
 			@include project-card-big;
@@ -279,6 +300,9 @@ body {
 				img {
 					width: 32vw;
 				}
+			}
+			&:hover {
+				box-shadow: 0px 0px 69px -30px rgba(219, 208, 251, 1);
 			}
 		}
 		.card-10 {
@@ -301,6 +325,9 @@ body {
 				img {
 					width: 24vw;
 				}
+			}
+			&:hover {
+				box-shadow: 0px 32px 72px -30px rgba(56, 56, 56, 0.3);
 			}
 		}
 		.card-11 {
@@ -344,6 +371,9 @@ body {
 				img {
 					width: 18vw;
 				}
+			}
+			&:hover {
+				box-shadow: 0px 0px 69px -30px rgba(235, 242, 255, 1);
 			}
 		}
 	}

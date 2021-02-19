@@ -763,6 +763,10 @@ body {
 
 @media screen and (max-width: 620px) {
 	.body {
+		margin-top: 6vh;
+		.header {
+			margin-top: 0;
+		}
 		.hero {
 			width: 72vw;
 			.heading-container {
@@ -945,8 +949,6 @@ body {
 	}
 	.header {
 		width: 102vw;
-		margin-top: 24px !important;
-		margin-bottom: 28px;
 		.right {
 			margin-right: 6vw;
 			span {

@@ -2023,6 +2023,12 @@ body a:hover {
 }
 
 @media screen and (max-width: 620px) {
+  .body {
+    margin-top: 6vh;
+  }
+  .body .header {
+    margin-top: 0;
+  }
   .body .hero {
     width: 72vw;
   }
@@ -2178,8 +2184,6 @@ body a:hover {
   }
   .header {
     width: 102vw;
-    margin-top: 24px !important;
-    margin-bottom: 28px;
   }
   .header .right {
     margin-right: 6vw;

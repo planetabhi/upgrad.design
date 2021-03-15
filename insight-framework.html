@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Insight Framework</title>
+		<link rel="stylesheet" href="styling/projects.css" />
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="/js/circletype.min.js"></script>
+		<link rel="shortcut icon" type="image/jpg" href="/resources/images/favicon.png"/>
+
+		<style>
+		.subheading a {
+  text-decoration: none;
+  color: #E32525 !important;
+  font-weight: 900;
+  margin: 0 20px 0 0;
+  position: relative;
+	border-bottom: 2px solid #e32525;
+	letter-spacing: -0.4px
+}
+
+.subheading a:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #E32525;
+  content: '';
+  -webkit-transform: translateY(8px);
+  opacity: 0;
+  transition-property: -webkit-transform, opacity;
+  transition-duration: .3s;
+}
+
+.subheading a:hover:before {
+  -webkit-transform: translateY(0);
+  opacity: 1;
+}
+		</style>
+
+	</head>
+	<body style="overflow-x: hidden">
+
+
+		<div class="header" id="header">
+			<div class="left">
+				<a href="/index.html"> <img src="/resources/images/monogram-dark.svg" alt="" /></a>
+			</div>
+			<div class="right" id="rightNav">
+				<nav role="navigation">
+
+					<div id="menuToggle">
+
+					  <input type="checkbox" / id="overlayCheck" onclick="overlayInit()">
+
+					  <span></span>
+					  <span></span>
+					  <span></span>
+
+					  <ul id="menu">
+						<a href="https://upgrad.design/"><li>Home</li></a>
+						<a href="https://upgrad.design/projects"><li>Projects</li></a>
+						<a href="https://upgrad.design/hygge"><li>Design System</li></a>
+						<a href="mailto:rnd@upgrad.com?Subject=Knock%20Knock" target="_top"><li>Contact us</li></a>
+					  </ul>
+					</div>
+				  </nav>
+			</div>
+			<div class="overlay" id="overlay"></div>
+
+		</div>
+		<div class="body" id="body">
+
+
+			<div class="hero">
+				<div class="heading-container" id="hero2">
+					<div class="heading">Insight Framework</div>
+				</div>
+				<div class="subheading-container">
+					<div class="subheading">A standardized format to accelerate your workflow and save your time. A composition to empower stakeholders to work in parallel and ship high-quality design quickly.<br><br>
+					<a href="insight_framework.pdf">Download PDF Here</a></div>
+
+
+				</div>
+
+			</div>
+			</div>
+
+
+
+	</body>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178035147-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-178035147-1');
+	</script>
+
+</html>
